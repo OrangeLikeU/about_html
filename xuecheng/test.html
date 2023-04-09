@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo {
+            --convexity: 3;
+            /* between -5 and 5 */
+            --metal: gold;
+            border-radius: 64px;
+            font-family: sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            height: 120px;
+            line-height: 120px;
+            margin: 32px auto;
+            text-align: center;
+            width: 240px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .demo:nth-child(2) {
+            --metal: neutral;
+            background-color: rebeccapurple;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="demo metallicss">
+        gold
+    </div>
+    <div class="demo metallicss">
+        purple
+    </div>
+    <script type="module" src="https://unpkg.com/metallicss@3.0.4/dist/metallicss.min.js"></script>
+    <!-- <script type="module" src="metallicss.min.js"></script> -->
+</body>
+
+</html>
